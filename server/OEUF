@@ -1,0 +1,4 @@
+Un client pond un oeuf
+   team->nb_oeuf_free++
+
+   quand on client se connecte si la team est full on le stock en tant qu'oeuf donc team->nb_oeuf_free++;

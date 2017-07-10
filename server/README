@@ -1,0 +1,34 @@
+Scinder les ptr de fonction en deux tableau
+	=>IA
+	=>Graphique
+
+les réponses aux cmd graphique seront envoyé au client graphique
+et les IA aux client IA
+
+a chaque handle on regarde si la fonction est dans la liste IA ou Graphical
+  	 => on répond en fonction
+
+
+t_handle
+{
+	char	name[255];
+	fct	cmd;
+	double	time;	
+}
+
+t_cmd_IA
+{
+	t_handle	cmd[];
+	
+	methode		is_IA();
+	methode		push_cmd();
+}
+
+t_cmd_GRAPH
+{
+	t_handle	cmd[];
+
+	methode		is_GRAPH();
+	methode		push_cmd();
+}
+
